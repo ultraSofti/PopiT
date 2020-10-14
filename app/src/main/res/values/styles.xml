@@ -7,4 +7,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.WelcomeScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
 </resources>
