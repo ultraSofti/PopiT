@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">POPiT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="log_in">Login</string>
+    <string name="email_hint">stevejobs@gmail.com</string>
+    <string name="your_email">Your Email</string>
+    <string name="your_password">Your Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password_hint">********</string>
+    <string name="your_name">Your Name</string>
 </resources>
