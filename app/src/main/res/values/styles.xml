@@ -26,4 +26,14 @@
         <item name="android:textSize">15sp</item>
     </style>
 
+    <style name="Primary_text_style">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="sec_text_style">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+
 </resources>
