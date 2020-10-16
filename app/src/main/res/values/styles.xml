@@ -8,6 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+    <style name="AppTheme.WelcomeScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
     <style name="font_roboto_white">
         <item name="android:fontFamily">@font/roboto_bold</item>
         <item name="android:textColor">@android:color/white</item>
@@ -66,5 +73,6 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
+
 
 </resources>
