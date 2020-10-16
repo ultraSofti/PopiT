@@ -10,4 +10,9 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="password_hint">********</string>
     <string name="your_name">Your Name</string>
+
+    <string name="invite_your_friends">Invite your friends and family to use the app to receive free drinks and gift.</string>
+    <string name="earn_free_drinks_and_gifts">Earn Free Drinks And Gifts</string>
+    <string name="one_place_with_the_best_collections">One place with the best collections of assorted wine grown to give you an amazing taste you cannot resist.</string>
+    <string name="find_the_perfect_wine">Find The Perfect Wine</string>
 </resources>
