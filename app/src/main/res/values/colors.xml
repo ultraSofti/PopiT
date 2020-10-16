@@ -8,4 +8,8 @@
     <color name="colorBlue">#2F80ED</color>
     <color name="background_walkthrough_screen_black">#000000</color>
     <color name="color_purple_login_screen">#FA6B74</color>
+    <color name="backgound_checkout_screen">#E5E5E5</color>
+    <color name="textcolor_brown_light">#979797</color>
+    <color name="textcolor_black">#000000</color>
+    <color name="textcolor_orange">#FA5805</color>
 </resources>

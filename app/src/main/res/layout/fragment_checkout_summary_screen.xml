@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgound_checkout_screen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/your_order"
+            style="@style/textpropertie_large_label_brown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:text="YOUR ORDER"
+            app:layout_constraintBottom_toTopOf="@+id/cardview_nine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_nine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/relativelayout_your_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/your_order">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/subtotal"
+                    style="@style/textproperties_small_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Subtotal"
+                    android:textFontWeight="400" />
+
+                <TextView
+                    android:id="@+id/subtotal_value"
+                    style="@style/textproperties_small_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="60dp"
+                    tools:text="N26,000" />
+
+                <TextView
+                    android:id="@+id/shipping"
+                    style="@style/textproperties_small_black"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/subtotal_value"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Shipping"
+                    android:textFontWeight="400" />
+
+                <TextView
+                    android:id="@+id/shipping_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/subtotal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="60dp"
+                    android:textColor="@color/textcolor_orange"
+                    android:textFontWeight="400"
+                    tools:text="N1,000" />
+
+                <View
+                    android:id="@+id/divider_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/shipping"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="54dp"
+                    android:background="?android:attr/listDivider"
+                    android:elevation="8dp" />
+
+                <TextView
+                    android:id="@+id/total"
+                    style="@style/textproperties_small_black"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider_two"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Total"
+                    android:textFontWeight="400" />
+
+                <TextView
+                    android:id="@+id/total_value"
+                    android:layout_width="wrap_content"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider_two"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="60dp"
+                    android:textColor="@color/textcolor_orange"
+                    tools:text="N27,000" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_your_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toTopOf="@id/relativelayout_delivery_method"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_nine"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/your_address"
+                style="@style/textpropertie_large_label_brown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:text=" your address" />
+
+            <TextView
+                android:id="@+id/change_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="262dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="sans-serif"
+                android:text="change"
+                android:textAllCaps="true"
+                android:textColor="@color/textcolor_orange" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/your_address"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/addess_title"
+                        style="@style/textpropertie_large_label_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="start"
+                        android:paddingStart="20dp"
+                        tools:text="Jerry adams" />
+
+                    <TextView
+                        android:id="@+id/address_description"
+                        style="@style/textproperties_small_brown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:paddingStart="20dp"
+                        tools:text="Ravico Bus Stop - Uyo, Akwa Ibom" />
+
+                    <TextView
+                        android:id="@+id/address_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="start"
+                        android:paddingStart="20dp"
+                        android:textColor="@color/textcolor_brown_light"
+                        android:textFontWeight="400"
+                        tools:text="+234 808835775" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_delivery_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/cardview_eleven"
+            app:layout_constraintTop_toBottomOf="@id/relativelayout_your_address">
+
+            <TextView
+                android:id="@+id/delivery_method"
+                style="@style/textpropertie_large_label_brown"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:text="DELIVERY METHOD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_change_delivery_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="26dp"
+                android:layout_toEndOf="@id/delivery_method"
+                android:fontFamily="sans-serif"
+                android:text="change"
+                android:textAllCaps="true"
+                android:textColor="@color/textcolor_orange" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardview_eleven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/relativelayout_payment_method"
+            app:layout_constraintTop_toBottomOf="@id/relativelayout_delivery_method">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/home_and_office_method"
+                    style="@style/textpropertie_large_label_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Home &amp; Office Delivery" />
+
+                <TextView
+                    android:id="@+id/delivery_between_value_left"
+                    style="@style/textproperties_small_brown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_and_office_method"
+                    android:layout_marginStart="50dp"
+                    android:text="Delivery between Wednesday 14 Oct" />
+
+                <TextView
+                    android:id="@+id/delivery_between_value_right"
+                    style="@style/textproperties_small_brown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/delivery_between_value_left"
+                    android:layout_marginStart="50dp"
+                    android:text="and Thursday 15 Oct" />
+
+                <TextView
+                    android:id="@+id/shipping_fee"
+                    style="@style/textproperties_small_brown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/delivery_between_value_right"
+                    android:layout_marginStart="50dp"
+                    android:text="Shipping Fee:" />
+
+                <TextView
+                    android:id="@+id/shipping_fee_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/delivery_between_value_right"
+                    android:layout_toEndOf="@id/shipping_fee"
+                    android:text="N1000:"
+                    android:textColor="@color/textcolor_orange" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <RelativeLayout
+
+            android:id="@+id/relativelayout_payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/cardview_twelve"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_eleven">
+
+            <TextView
+                android:id="@+id/payment_method"
+                style="@style/textpropertie_large_label_brown"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="20dp"
+                android:text="DELIVERY METHOD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_change_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="26dp"
+                android:layout_toEndOf="@id/payment_method"
+                android:fontFamily="sans-serif"
+                android:text="change"
+                android:textAllCaps="true"
+                android:textColor="@color/textcolor_orange" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_twelve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativelayout_payment_method">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <TextView
+                    android:id="@+id/tv_payment_method"
+                    style="@style/textproperties_small_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:text="Mastercard/Visa Debt &amp; Credit Cards" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            style="@style/viewproperties_proceed_payment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="12dp"
+            android:text="confirm"
+            android:textAllCaps="true"
+            app:layout_constraintTop_toBottomOf="@id/cardview_twelve" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
