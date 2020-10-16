@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "107723284854",
+    "firebase_url": "https://popit-58374.firebaseio.com",
+    "project_id": "popit-58374",
+    "storage_bucket": "popit-58374.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107723284854:android:d48132696f0cb212711a57",
+        "android_client_info": {
+          "package_name": "gads.mobile.ecom05"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107723284854-pkkl4vn6ofhgcr4k3tkser8trjr4ak6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARAMqToYEPJSAAyUdaPRsU0HmSA6lx5LE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107723284854-pkkl4vn6ofhgcr4k3tkser8trjr4ak6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

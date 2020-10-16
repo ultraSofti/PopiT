@@ -6,4 +6,11 @@
     <color name="primaryText">#000000</color>
     <color name="secondaryText">#AE1212</color>
     <color name="colorBlue">#2F80ED</color>
+    <color name="loginText">#3D0007</color>
+    <color name="hintText">#3F0108</color>
+    <color name="white">#ffffff</color>
+    <color name="login_btn_text">#FA6B74</color>
+    <color name="background_walkthrough_screen_black">#000000</color>
+    <color name="color_purple_login_screen">#FA6B74</color>
+
 </resources>
