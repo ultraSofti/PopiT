@@ -15,47 +15,43 @@ import gads.mobile.ecom05.fragments.OnBoardingScreenFragment
 import gads.mobile.ecom05.fragments.WelcomeAuthPromptFragment
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_welcome_auth.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+//  This code Block has been moved to Welcome Auth Activity
 
-        this.supportActionBar?.hide()
-
-        if (onBoardingFinished()) {
-            val welcomeAuthPromptFragment = WelcomeAuthPromptFragment()
-            launchScreenFragment(welcomeAuthPromptFragment)
-
-        } else {
-            val onBoardingScreenFragment = OnBoardingScreenFragment()
-            launchScreenFragment(onBoardingScreenFragment)
-
-        }
-
-
-
-  
-  
+//        this.supportActionBar?.hide()
+//
+//        if (onBoardingFinished()) {
+//            val welcomeAuthPromptFragment = WelcomeAuthPromptFragment()
+//            launchScreenFragment(welcomeAuthPromptFragment)
+//
+//        } else {
+//            val onBoardingScreenFragment = OnBoardingScreenFragment()
+//            launchScreenFragment(onBoardingScreenFragment)
+//
+//        }
 
     }
+//   This block has been replaced with navigation
+//    private fun launchScreenFragment(fragment: Fragment) {
+//        val containerId = container.id
+//        supportFragmentManager.beginTransaction().replace(containerId, fragment)
+//            .addToBackStack(null)
+//            .commit()
+//    }
 
-    private fun launchScreenFragment(fragment: Fragment) {
-        val containerId = container.id
-        supportFragmentManager.beginTransaction().replace(containerId, fragment)
-            .addToBackStack(null)
-            .commit()
-    }
-
-    override fun onBackPressed() {
-
-
-        finish()
-    }
-
-    private fun onBoardingFinished(): Boolean {
-        val pref = getSharedPreferences(ONBOARDING_PREF, Context.MODE_PRIVATE)
-        return pref.getBoolean("firstTime", false)
-    }
+    //  This code Block has been moved to Welcome Auth Activity
+//    override fun onBackPressed() {
+//        finish()
+//    }
+//
+//    private fun onBoardingFinished(): Boolean {
+//        val pref = getSharedPreferences(ONBOARDING_PREF, Context.MODE_PRIVATE)
+//        return pref.getBoolean("firstTime", false)
+//    }
 
 }

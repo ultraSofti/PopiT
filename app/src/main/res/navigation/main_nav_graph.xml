@@ -3,17 +3,4 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_nav_graph"
-    app:startDestination="@id/signupFragment">
-
-    <fragment
-        android:id="@+id/signupFragment"
-        android:name="gads.mobile.ecom05.fragments.signup.SignupFragment"
-        android:label="fragment_signup"
-        tools:layout="@layout/fragment_signup" />
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="gads.mobile.ecom05.fragments.login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
-</navigation>
+    android:id="@+id/main_nav_graph"/>
