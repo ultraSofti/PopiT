@@ -8,9 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
     <style name="AppTheme.WelcomeScreen" parent="AppTheme">
         <item name="android:windowFullscreen">true</item>
     </style>
+
 
     <style name="font_roboto_white">
         <item name="android:fontFamily">@font/roboto_bold</item>
@@ -26,6 +29,7 @@
         <item name="android:textSize">15sp</item>
     </style>
 
+
     <style name="Primary_text_style">
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textColor">@color/primaryText</item>
@@ -35,5 +39,53 @@
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textColor">@color/secondaryText</item>
     </style>
+
+
+    <style name="textpropertie_large_label_brown">
+
+
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#9B9B9B</item>
+
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="textpropertie_large_label_black">
+
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textproperties_small_brown">
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/textcolor_brown_light</item>
+
+    </style>
+
+    <style name="textpropertie_large_orange">
+
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/textcolor_orange</item>
+
+    </style>
+
+    <style name="textproperties_small_black">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+    </style>
+
+    <style name="viewproperties_proceed_payment">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/shape_button_get_started</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
 
 </resources>

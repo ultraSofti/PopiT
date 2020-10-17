@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">POPiT</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
 
     <string name="log_in">Login</string>
@@ -11,10 +13,12 @@
     <string name="password_hint">********</string>
     <string name="your_name">Your Name</string>
 
+
     <string name="invite_your_friends">Invite your friends and family to use the app to receive free drinks and gift.</string>
     <string name="earn_free_drinks_and_gifts">Earn Free Drinks And Gifts</string>
     <string name="one_place_with_the_best_collections">One place with the best collections of assorted wine grown to give you an amazing taste you cannot resist.</string>
     <string name="find_the_perfect_wine">Find The Perfect Wine</string>
+
 
     <string name="riunite_lambrusco">Riunite Lambrusco</string>
     <string name="item_price">N3000</string>
@@ -42,5 +46,9 @@
     <string name="share">share botton</string>
     <string name="add_to_wishlist">Add to wishlist</string>
     <string name="add_to_cart">Add to cart</string>
+
+    <string name="go_cashless_and_stay_safe">Go Cashless and Stay Safe - Eligible for contactless safe delivery. Pay through PopitPay by Credit or Debit Card We accept local and International credit or debit cards from MasterCard and VISA. Please make sure your card has been aproved by your bank for online transactions.</string>
+    <string name="please_note_popitpay_will_never">Please note: PopitPay will never ask you for your password, PIN CVV or full card details over the phone or via email. Need help? Contact us on</string>
+
 
 </resources>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/backgound_checkout_screen"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/select_payment_method"
+            style="@style/textpropertie_large_label_brown"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:text="SELECT A PAYMENT METHOD"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/cardview_five"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardview_six"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_payment_method">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <RadioButton
+                    android:id="@+id/radio_mobile_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    tools:checked="true" />
+
+                <TextView
+                    android:id="@+id/mobile_money"
+                    style="@style/textproperties_small_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/radio_mobile_money"
+                    android:text="Mobile Money - MTN, AirtelTiGo" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardview_six"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardview_seven"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardview_five">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radio_visacard_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    tools:checked="true" />
+
+                <ImageView
+                    android:id="@+id/imageView_visacard_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@id/radio_visacard_one"
+                    app:srcCompat="@drawable/visacard_one" />
+
+                <TextView
+                    android:id="@+id/card_type"
+                    style="@style/textproperties_small_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView_visacard_one"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Mastercard/Visa Debt &amp; Credit Cards" />
+
+                <TextView
+                    style="@style/textproperties_small_brown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_type"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/go_cashless_and_stay_safe" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/use_a_voucher"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview_six">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <RadioButton
+                    android:id="@+id/radio_pay_on_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    tools:checked="false" />
+
+                <TextView
+                    android:id="@+id/pay_on_delivery"
+                    style="@style/textproperties_small_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/radio_pay_on_delivery"
+                    android:text="Pay on delivery" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/use_a_voucher"
+            style="@style/textpropertie_large_label_brown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="start"
+            android:text="USE A VOUCHER"
+            app:layout_constraintBottom_toTopOf="@+id/relativelayout_voucher_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview_seven" />
+
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:id="@+id/relativelayout_voucher_code"
+            app:layout_constraintBottom_toTopOf="@+id/cardview_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/use_a_voucher">
+
+            <EditText
+                android:id="@+id/edit_voucher_code"
+                style="@style/textproperties_small_black"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:hint="Enter Voucher Code" />
+
+            <TextView
+                android:id="@+id/tv_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="24dp"
+                android:layout_toEndOf="@+id/edit_voucher_code"
+                android:background="@color/textcolor_orange"
+                android:gravity="center"
+                android:text="APPLY"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardview_height"
+            android:layout_marginTop="25dp"
+            app:layout_constraintTop_toBottomOf="@id/relativelayout_voucher_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/subtotal"
+                    android:text="Subtotal"
+                    android:textFontWeight="400"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textproperties_small_black" />
+                <TextView
+                    android:id="@+id/subtotal_value"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    tools:text="N26,000"
+                    style="@style/textproperties_small_black"
+                    android:layout_marginEnd="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/shipping"
+                    android:text="Shipping"
+                    android:textFontWeight="400"
+
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/subtotal_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textproperties_small_black" />
+                <TextView
+                    android:id="@+id/shipping_value"
+                    tools:text="N1,000"
+                    android:textFontWeight="400"
+
+                    android:layout_marginEnd="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor_orange"
+                    android:layout_below="@id/subtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <View
+                    android:id="@+id/divider_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/shipping"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="8dp"
+                    android:layout_marginEnd="54dp"
+                    android:background="?android:attr/listDivider"
+                    />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:text="Total"
+                    android:textFontWeight="400"
+
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/divider_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textproperties_small_black" />
+                <TextView
+                    android:id="@+id/total_value"
+                    tools:text="N27,000"
+
+
+                    android:layout_marginEnd="60dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textcolor_orange"
+                    android:layout_below="@id/divider_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_process_to_payment"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/total"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="PROCEED TO PAYMENT"
+
+                    style="@style/viewproperties_proceed_payment" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
