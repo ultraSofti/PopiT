@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgound_checkout_screen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/oder_summary"
+            style="@style/textpropertie_large_label_brown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="start"
+            android:text="ORDER SUMMARY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_thirteen"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toTopOf="@id/card_details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oder_summary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_total_to_pay"
+                    style="@style/textpropertie_large_label_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="total to pay" />
+
+                <TextView
+                    android:id="@+id/tv_total_to_pay_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="N27,000"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textcolor_orange"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/card_details"
+            style="@style/textpropertie_large_label_brown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="start"
+            android:text="ENTER YOU CARD DETAILS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardview_thirteen" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_fourteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_details">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/bank_card"
+                    style="@style/textproperties_small_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Bank Cards" />
+
+                <ImageView
+                    android:id="@+id/imageView_visacard_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="60dp"
+                    app:srcCompat="@drawable/visacard_one" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputlayout_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bank_card"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="60dp"
+                    android:hint="Card number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/expire_date"
+                    style="@style/textproperties_small_brown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/inputlayout_card_number"
+                    android:layout_marginStart="24dp"
+                    android:text="Expire date" />
+
+                <LinearLayout
+                    android:id="@+id/card_expire_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/expire_date"
+
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinner_month"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start" />
+
+                    <Spinner
+                        android:id="@+id/spinner_year"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start" />
+
+                    <EditText
+                        android:id="@+id/edit_cw"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:hint="037"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="CVV" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/alert_info"
+                    style="@style/textproperties_small_brown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_expire_date"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/please_note_popitpay_will_never" />
+
+                <TextView
+                    android:id="@+id/popit_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alert_info"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:gravity="start"
+                    android:text="https://www.popit.gads2020.ecom15.com"
+                    android:textColor="@android:color/holo_blue_dark" />
+
+                <TextView
+                    android:id="@+id/tv_confirm_payment"
+                    style="@style/viewproperties_proceed_payment"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="50dp"
+                    android:layout_below="@id/popit_link"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="24dp"
+                    android:gravity="center"
+                    android:text="Confirm" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
