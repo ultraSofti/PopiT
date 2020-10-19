@@ -4,15 +4,10 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-import android.view.View
-import android.widget.RelativeLayout
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import com.google.android.material.tabs.TabLayoutMediator
-import gads.mobile.ecom05.adapters.WalkThroughScreenPagerAdapter
-import gads.mobile.ecom05.fragments.ONBOARDING_PREF
-import gads.mobile.ecom05.fragments.OnBoardingScreenFragment
-import gads.mobile.ecom05.fragments.WelcomeAuthPromptFragment
+import gads.mobile.ecom05.fragments.walkthrough.ONBOARDING_PREF
+import gads.mobile.ecom05.fragments.walkthrough.OnBoardingScreenFragment
+import gads.mobile.ecom05.fragments.welcomeAuth.WelcomeAuthPromptFragment
 
 import kotlinx.android.synthetic.main.activity_main.*
 
