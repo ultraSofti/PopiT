@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/welcome_auth_navigation"
-    app:startDestination="@id/loginFragment2">
+    app:startDestination="@id/onBoardingScreenFragment">
 
     <fragment
         android:id="@+id/loginFragment2"
@@ -11,8 +11,11 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment2_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_loginFragment2_to_mainActivity2"
+            app:destination="@id/mainActivity2"
+            app:enterAnim="@anim/fade_in_right"
+            app:popUpTo="@id/loginFragment2"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/signupFragment2"
@@ -20,19 +23,37 @@
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" >
         <action
-            android:id="@+id/action_signupFragment2_to_mainActivity"
-            app:destination="@id/mainActivity" />
+            android:id="@+id/action_signupFragment2_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+        <action
+            android:id="@+id/action_signupFragment2_to_mainActivity2"
+            app:destination="@id/mainActivity2"
+            app:enterAnim="@anim/fade_in_right"
+            app:popUpTo="@id/signupFragment2"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/welcomeAuthPromptFragment"
-        android:name="gads.mobile.ecom05.fragments.WelcomeAuthPromptFragment"
+        android:name="gads.mobile.ecom05.fragments.welcomeAuth.WelcomeAuthPromptFragment"
         android:label="WelcomeAuthPromptFragment" >
         <action
             android:id="@+id/action_welcomeAuthPromptFragment_to_signupFragment2"
-            app:destination="@id/signupFragment2" />
+            app:destination="@id/signupFragment2"
+            app:enterAnim="@anim/fade_in_right"
+            app:launchSingleTop="true" />
         <action
             android:id="@+id/action_welcomeAuthPromptFragment_to_loginFragment2"
-            app:destination="@id/loginFragment2" />
+            app:destination="@id/loginFragment2"
+            app:enterAnim="@anim/fade_in_right"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/welcomeAuthPromptFragment" />
+        <action
+            android:id="@+id/action_welcomeAuthPromptFragment_to_mainActivity2"
+            app:destination="@id/mainActivity2"
+            app:enterAnim="@anim/fade_in_right"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/mainActivity2"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/onBoardingScreenFragment"
@@ -40,10 +61,12 @@
         android:label="OnBoardingScreenFragment" >
         <action
             android:id="@+id/action_onBoardingScreenFragment_to_welcomeAuthPromptFragment"
-            app:destination="@id/welcomeAuthPromptFragment" />
+            app:destination="@id/welcomeAuthPromptFragment"
+            app:popUpTo="@id/onBoardingScreenFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <activity
-        android:id="@+id/mainActivity"
+        android:id="@+id/mainActivity2"
         android:name="gads.mobile.ecom05.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />

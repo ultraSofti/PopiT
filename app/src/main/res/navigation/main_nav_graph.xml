@@ -3,4 +3,32 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_nav_graph"/>
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/navigation_home">
+    <fragment
+    android:id="@+id/navigation_home"
+    android:name="gads.mobile.ecom05.fragments.home.HomeFragment"
+    android:label="Home"
+    tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="gads.mobile.ecom05.fragments.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="gads.mobile.ecom05.fragments.cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart"/>
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="gads.mobile.ecom05.fragments.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="gads.mobile.ecom05.fragments.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

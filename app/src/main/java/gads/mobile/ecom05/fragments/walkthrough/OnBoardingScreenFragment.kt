@@ -23,6 +23,7 @@ class OnBoardingScreenFragment: Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_onboarding_screen,container,false)
 
+
       view.viewpager.adapter= WalkThroughScreenPagerAdapter(requireActivity())
         TabLayoutMediator(view.tablayout,view.viewpager,true) { _, _ ->
 
