@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.addCallback
 import androidx.navigation.fragment.NavHostFragment
 import gads.mobile.ecom05.R
 import kotlinx.android.synthetic.main.fragment_signup.*

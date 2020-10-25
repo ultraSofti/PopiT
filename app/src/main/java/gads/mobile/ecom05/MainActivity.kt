@@ -1,24 +1,21 @@
 package gads.mobile.ecom05
 
-import android.content.Context
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-import androidx.fragment.app.Fragment
 
-import androidx.fragment.app.FragmentManager
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.tabs.TabLayoutMediator
-import gads.mobile.ecom05.adapters.WalkThroughScreenPagerAdapter
+
 
 
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_welcome_auth.*
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,22 +42,6 @@ class MainActivity : AppCompatActivity() {
         }else super.onBackPressed()
     }
 
-    //   This block has been replaced with navigation
-//    private fun launchScreenFragment(fragment: Fragment) {
-//        val containerId = container.id
-//        supportFragmentManager.beginTransaction().replace(containerId, fragment)
-//            .addToBackStack(null)
-//            .commit()
-//    }
 
-    //  This code Block has been moved to Welcome Auth Activity
-//    override fun onBackPressed() {
-//        finish()
-//    }
-//
-//    private fun onBoardingFinished(): Boolean {
-//        val pref = getSharedPreferences(ONBOARDING_PREF, Context.MODE_PRIVATE)
-//        return pref.getBoolean("firstTime", false)
-//    }
 
 }

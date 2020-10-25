@@ -10,8 +10,6 @@ import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.tabs.TabLayoutMediator
 import gads.mobile.ecom05.R
 import gads.mobile.ecom05.adapters.WalkThroughScreenPagerAdapter
-import gads.mobile.ecom05.fragments.welcomeAuth.WelcomeAuthPromptFragment
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_onboarding_screen.view.*
 
 const val ONBOARDING_PREF="gads.mobile.ecom05.onboarding"
@@ -37,16 +35,7 @@ class OnBoardingScreenFragment: Fragment() {
 
     }
 
-    //        Replaced this block with navigation graph
-//    private fun addWelcomeScreenToContainer() {
-//      val welcomeAuthPromptFragment=
-//          WelcomeAuthPromptFragment()
-//        val fragmentTransaction= fragmentManager?.beginTransaction()
-//        val container= requireActivity().container.id
-//
-//            fragmentTransaction?.replace(container,welcomeAuthPromptFragment)
-//        fragmentTransaction?.addToBackStack(null)
-//        fragmentTransaction?.commit()
+
 
 
 
