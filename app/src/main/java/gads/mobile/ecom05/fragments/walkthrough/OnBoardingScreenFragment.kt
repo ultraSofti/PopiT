@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.tabs.TabLayoutMediator
 import gads.mobile.ecom05.R
 import gads.mobile.ecom05.adapters.WalkThroughScreenPagerAdapter
@@ -22,32 +23,35 @@ class OnBoardingScreenFragment: Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_onboarding_screen,container,false)
 
+
       view.viewpager.adapter= WalkThroughScreenPagerAdapter(requireActivity())
         TabLayoutMediator(view.tablayout,view.viewpager,true) { _, _ ->
 
         }.attach()
         view.button_get_started.setOnClickListener {
             onBoardingFinished()
-            addWelcomeScreenToContainer()
+            NavHostFragment.findNavController(this)
+                .navigate(R.id.action_onBoardingScreenFragment_to_welcomeAuthPromptFragment)
         }
         return view
 
     }
 
-    private fun addWelcomeScreenToContainer() {
-      val welcomeAuthPromptFragment=
-          WelcomeAuthPromptFragment()
-        val fragmentTransaction= fragmentManager?.beginTransaction()
-        val container= requireActivity().container.id
+    //        Replaced this block with navigation graph
+//    private fun addWelcomeScreenToContainer() {
+//      val welcomeAuthPromptFragment=
+//          WelcomeAuthPromptFragment()
+//        val fragmentTransaction= fragmentManager?.beginTransaction()
+//        val container= requireActivity().container.id
+//
+//            fragmentTransaction?.replace(container,welcomeAuthPromptFragment)
+//        fragmentTransaction?.addToBackStack(null)
+//        fragmentTransaction?.commit()
 
-            fragmentTransaction?.replace(container,welcomeAuthPromptFragment)
-        fragmentTransaction?.addToBackStack(null)
-        fragmentTransaction?.commit()
 
-    }
 
     private fun onBoardingFinished() {
-        val sharePreferences=requireActivity().getSharedPreferences(ONBOARDING_PREF, Context.MODE_PRIVATE)
+        val sharePreferences= requireActivity().getSharedPreferences(ONBOARDING_PREF, Context.MODE_PRIVATE)
         val editor=sharePreferences.edit()
         editor.putBoolean("firstTime",true)
         editor.apply()

@@ -37,6 +37,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"

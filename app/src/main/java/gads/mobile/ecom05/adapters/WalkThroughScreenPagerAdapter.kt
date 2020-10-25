@@ -9,6 +9,7 @@ import gads.mobile.ecom05.fragments.walkthrough.WalkThroughScreenThreeFragment
 import gads.mobile.ecom05.fragments.walkthrough.WalkThroughScreenTwoFragment
 
 
+
 class WalkThroughScreenPagerAdapter(fragmentActivity: FragmentActivity) :
     FragmentStateAdapter(fragmentActivity) {
     override fun getItemCount(): Int {
