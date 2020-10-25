@@ -3,8 +3,6 @@ package gads.mobile.ecom05.adapters
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 
-import androidx.fragment.app.FragmentManager
-import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import gads.mobile.ecom05.fragments.walkthrough.WalkThroughScreenFragment
 import gads.mobile.ecom05.fragments.walkthrough.WalkThroughScreenThreeFragment
