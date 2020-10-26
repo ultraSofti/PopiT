@@ -4,22 +4,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:windowTranslucentStatus">true</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
-    <style name="font_roboto_white">
-        <item name="android:fontFamily">@font/roboto_bold</item>
-        <item name="android:textColor">@android:color/white</item>
-    </style>
-
-    <style name="get_started_button_properties">
-        <item name="android:background">@drawable/shape_button_get_started</item>
-        <item name="android:padding">10dp</item>
-        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline5
-        </item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">15sp</item>
     </style>
 
 </resources>
