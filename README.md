@@ -5,7 +5,7 @@ educated about the varieties of wine, history, and wine production processes. Us
 product delivery. It also presents an opportunity for users to browse through a variety of wine products and their rich documentary, 
 Users also gets to earn free drinks and gift as they invite their friends to shop on the app.
 
-##App Flow
+## App Flow
 ![alt text](https://res.cloudinary.com/codepickin/image/upload/v1603700851/gad2020/User_Flow_ryjovb.png)
 When the App is launched, the user is presented with OnBoarding Screens followed by the Authentication Screen; 
 the user can decide to register/login or skip the Authentication by tapping the Skip text which takes the user to the Home Screen.
@@ -21,12 +21,14 @@ the user can decide to register/login or skip the Authentication by tapping the 
   * DELIVERY: User can view current deliver status and History
   * PROFILE: User can edit profile
 
-##APP ARCHETECTURE
+## APP ARCHETECTURE
 This project follows the MVVM archtecture
 ![alt text](https://res.cloudinary.com/codepickin/image/upload/v1603700882/gad2020/App_Flow_nb74nv.png)
 
-##SCREENSHOT
+## SCREENSHOT
 ![alt text](https://res.cloudinary.com/codepickin/image/upload/v1603701610/gad2020/Screenshot_viy5td.png)
 Figma Link - https://www.figma.com/file/j7d1xVsoNbBpOhYEWh1UH9/POPiT?node-id=0%3A1
+
+
 
 
