@@ -1,4 +1,4 @@
-package gads.mobile.ecom05.fragments
+package gads.mobile.ecom05.fragments.walkthrough
 
 import android.os.Bundle
 import android.view.LayoutInflater

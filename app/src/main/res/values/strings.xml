@@ -1,7 +1,58 @@
 <resources>
     <string name="app_name">POPiT</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="log_in">Login</string>
+    <string name="email_hint">stevejobs@gmail.com</string>
+    <string name="your_email">Your Email</string>
+    <string name="your_password">Your Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password_hint">********</string>
+    <string name="your_name">Your Name</string>
+
+
     <string name="invite_your_friends">Invite your friends and family to use the app to receive free drinks and gift.</string>
     <string name="earn_free_drinks_and_gifts">Earn Free Drinks And Gifts</string>
     <string name="one_place_with_the_best_collections">One place with the best collections of assorted wine grown to give you an amazing taste you cannot resist.</string>
     <string name="find_the_perfect_wine">Find The Perfect Wine</string>
+
+
+    <string name="riunite_lambrusco">Riunite Lambrusco</string>
+    <string name="item_price">N3000</string>
+    <string name="wine_detail_text_sample"><![CDATA[Fortified wine from the Jerez de la Frontera
+    district in southern Spain. Palomino is the main grape variety, with Pedro Ximénez used for the sweeter, heavier wines.
+    Drier Sherries are best served chilled; the medium-sweet to sweet are best at room temperature.
+    Ranging from dry to very sweet, the styles are: Manzanilla, Fino, Amontillado, Oloroso, Pale Cream,
+    Cream, Palo, and Pedro Ximénez. Shiraz/Syrah Black cherry, spice, pepper, tar & leather with smooth
+    tannins & supple texture make this wine a growing favorite. With early drinking appeal it also has the
+    ability to age well to form more complex wines.]]></string>
+    <string name="shopping">Shopping</string>
+    <string name="cart">Cart</string>
+    <string name="total">TOTAL</string>
+    <string name="begin_checkout">Begin Checkout</string>
+    <string name="invite_friends_nand_earn">INVITE FRIENDS\nAND EARN</string>
+    <string name="explore_red_wine">Explore red wine</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="non_alcohol">Non-Alcohol</string>
+    <string name="ice_cream">Ice Cream</string>
+    <string name="popular">Popular</string>
+    <string name="wine_image">wine image</string>
+    <string name="volume">Volume</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="origin">Origin</string>
+    <string name="share">share botton</string>
+    <string name="add_to_wishlist">Add to wishlist</string>
+    <string name="add_to_cart">Add to cart</string>
+
+    <string name="go_cashless_and_stay_safe">Go Cashless and Stay Safe - Eligible for contactless safe delivery. Pay through PopitPay by Credit or Debit Card We accept local and International credit or debit cards from MasterCard and VISA. Please make sure your card has been aproved by your bank for online transactions.</string>
+    <string name="please_note_popitpay_will_never">Please note: PopitPay will never ask you for your password, PIN CVV or full card details over the phone or via email. Need help? Contact us on</string>
+    <string name="profile">Profile</string>
+    <string name="detail">Detail</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+
+
 </resources>
