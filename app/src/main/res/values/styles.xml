@@ -10,8 +10,16 @@
 
 
 
-    <style name="AppTheme.WelcomeScreen" parent="AppTheme">
+    <style name="AppTheme.WelcomeScreen" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowFullscreen">true</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+
+    </style>
+
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="iconTint">@color/textcolor_black</item>
+
+
     </style>
 
 

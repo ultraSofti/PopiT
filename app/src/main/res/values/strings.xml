@@ -49,6 +49,10 @@
 
     <string name="go_cashless_and_stay_safe">Go Cashless and Stay Safe - Eligible for contactless safe delivery. Pay through PopitPay by Credit or Debit Card We accept local and International credit or debit cards from MasterCard and VISA. Please make sure your card has been aproved by your bank for online transactions.</string>
     <string name="please_note_popitpay_will_never">Please note: PopitPay will never ask you for your password, PIN CVV or full card details over the phone or via email. Need help? Contact us on</string>
+    <string name="profile">Profile</string>
+    <string name="detail">Detail</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
 
 
 </resources>
