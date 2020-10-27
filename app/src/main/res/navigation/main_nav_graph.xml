@@ -24,7 +24,11 @@
         android:id="@+id/navigation_detail"
         android:name="gads.mobile.ecom05.fragments.detail.DetailFragment"
         android:label="Detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="selectedWine"
+            app:argType="gads.mobile.ecom05.models.Wine" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_profile"
         android:name="gads.mobile.ecom05.fragments.profile.ProfileFragment"
