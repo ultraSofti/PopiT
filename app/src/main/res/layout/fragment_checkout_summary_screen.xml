@@ -59,7 +59,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="30dp"
-                    android:layout_marginEnd="60dp"
+                    android:layout_marginEnd="63dp"
                     tools:text="N26,000" />
 
                 <TextView
