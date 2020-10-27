@@ -152,33 +152,31 @@
                     android:layout_marginEnd="24dp"
                     android:orientation="horizontal">
 
-                    <Spinner
+                    <EditText
+                        android:layout_gravity="center_vertical"
+                        android:inputType="number"
                         android:id="@+id/spinner_month"
-
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
-                        android:layout_marginTop="15dp"
-                        android:layout_weight="1"
-                        android:gravity="start" />
-
-                    <Spinner
-                        android:id="@+id/spinner_year"
-
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="15dp"
                         android:layout_weight="1"
                         android:gravity="start" />
 
                     <EditText
-                        android:id="@+id/edit_cw"
-
+                        android:layout_gravity="center_vertical"
+                        android:inputType="number"
+                        android:id="@+id/spinner_year"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:gravity="start" />
+
+                    <EditText
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/edit_cvv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
                         android:layout_weight="1"
                         android:gravity="start"
                         android:hint="037"
@@ -187,9 +185,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:gravity="start"
-                        android:text="CVV" />
+                        android:text="CVV"
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
@@ -201,7 +201,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/card_expire_date"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="24dp"
                     android:text="@string/please_note_popitpay_will_never" />
 
@@ -220,7 +220,6 @@
                     android:id="@+id/tv_confirm_payment"
                     style="@style/viewproperties_proceed_payment"
                     android:layout_width="match_parent"
-
                     android:layout_height="50dp"
                     android:layout_below="@id/popit_link"
                     android:layout_marginStart="24dp"
