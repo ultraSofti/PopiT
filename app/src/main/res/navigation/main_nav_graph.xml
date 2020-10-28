@@ -29,9 +29,15 @@
         android:name="gads.mobile.ecom05.fragments.detail.DetailFragment"
         android:label="Detail"
         tools:layout="@layout/fragment_detail" >
+
+        <argument
+            android:name="selectedWine"
+            app:argType="gads.mobile.ecom05.models.Wine" />
+
         <action
             android:id="@+id/action_navigation_detail_to_navigation_cart"
             app:destination="@id/navigation_cart" />
+
     </fragment>
     <fragment
         android:id="@+id/navigation_profile"
