@@ -8,14 +8,18 @@ import gads.mobile.ecom05.models.Wine
 @Dao
 interface WineDao {
     @Insert
-    fun insertWine(wine:Wine)
+    fun insertWine(wine: Wine)
+
     @Query("DELETE FROM Wine")
     fun clearWines()
+
     @Query("SELECT * FROM Wine ")
-  fun getAllWines(): List<Wine>
+    fun getAllWines(): List<Wine>
+
     @Query("SELECT * FROM Wine LIMIT 1")
-    fun getFirstWine():Wine
-     @Update
-     fun updateWine(wine: Wine)
+    fun getFirstWine(): Wine
+
+    @Update
+    fun updateWine(wine: Wine)
 
 }

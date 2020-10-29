@@ -46,9 +46,7 @@ class CardPaymentFragment : Fragment() {
             }else {
                 Toast.makeText(context, "Error charging card", Toast.LENGTH_SHORT).show()
             }
-
         }
-
 
     }
 

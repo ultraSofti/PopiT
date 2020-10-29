@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
 apply plugin: "androidx.navigation.safeargs"
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 30
@@ -61,6 +62,7 @@ dependencies {
     //  material search bar
     implementation 'com.github.mancj:MaterialSearchBar:0.8.5'
 
+    //payment platform
     implementation 'co.paystack.android:paystack:3.1.2'
 
     implementation 'com.google.firebase:firebase-database:19.5.0'
@@ -69,5 +71,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+//  room db
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 
 }
