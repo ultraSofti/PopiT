@@ -27,20 +27,83 @@
         android:id="@+id/navigation_cart"
         android:name="gads.mobile.ecom05.fragments.cart.CartFragment"
         android:label="Cart"
-        tools:layout="@layout/fragment_cart"/>
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_navigation_cart_to_deliveryFragment"
+            app:destination="@id/deliveryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_detail"
         android:name="gads.mobile.ecom05.fragments.detail.DetailFragment"
         android:label="Detail"
         tools:layout="@layout/fragment_detail" >
+
         <argument
             android:name="selectedWine"
             app:argType="gads.mobile.ecom05.models.Wine" />
+
+        <action
+            android:id="@+id/action_navigation_detail_to_navigation_cart"
+            app:destination="@id/navigation_cart" />
+
     </fragment>
     <fragment
         android:id="@+id/navigation_profile"
         android:name="gads.mobile.ecom05.fragments.profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/deliveryFragment"
+        android:name="gads.mobile.ecom05.fragments.checkout.DeliveryFragment"
+        android:label="DeliveryFragment" >
+        <action
+            android:id="@+id/action_deliveryFragment_to_checkoutPaymentFragment"
+            app:destination="@id/checkoutPaymentFragment" />
+        <argument
+            android:name="totalPrice"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkoutPaymentFragment"
+        android:name="gads.mobile.ecom05.fragments.checkout.CheckoutPaymentFragment"
+        android:label="CheckoutPaymentFragment" >
+        <action
+            android:id="@+id/action_checkoutPaymentFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+        <argument
+            android:name="paymentSubTotal"
+            app:argType="string" />
+        <argument
+            android:name="paymentShipFee"
+            app:argType="string" />
+        <argument
+            android:name="paymentTotal"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="gads.mobile.ecom05.fragments.checkout.SummaryFragment"
+        android:label="SummaryFragment" >
+        <action
+            android:id="@+id/action_summaryFragment_to_cardPaymentFragment"
+            app:destination="@id/cardPaymentFragment" />
+        <argument
+            android:name="summarySubTotal"
+            app:argType="string" />
+        <argument
+            android:name="summaryShipFee"
+            app:argType="string" />
+        <argument
+            android:name="summaryTotal"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardPaymentFragment"
+        android:name="gads.mobile.ecom05.fragments.checkout.CardPaymentFragment"
+        android:label="CardPaymentFragment" >
+        <argument
+            android:name="totalPayment"
+            app:argType="string" />
+    </fragment>
 
 </navigation>
