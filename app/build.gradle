@@ -2,6 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: "androidx.navigation.safeargs"
+apply plugin: 'kotlin-kapt'
 
 apply plugin: 'kotlin-kapt'
 
@@ -64,13 +66,16 @@ dependencies {
     // RecyclerView
     implementation "androidx.recyclerview:recyclerview:$version_recyclerview"
 
+
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     //  material search bar
     implementation 'com.github.mancj:MaterialSearchBar:0.8.5'
+
 
     // room
     implementation 'androidx.room:room-ktx:2.3.0-alpha03'
@@ -78,8 +83,11 @@ dependencies {
     // firebase
 
 
-    implementation 'co.paystack.android:paystack:3.1.2'
+    
 
+
+    //payment platform
+    implementation 'co.paystack.android:paystack:3.1.2'
 
     implementation 'com.google.firebase:firebase-database:19.5.0'
     implementation 'com.google.firebase:firebase-auth:19.4.0'
@@ -91,5 +99,9 @@ dependencies {
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+//  room db
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 
 }
