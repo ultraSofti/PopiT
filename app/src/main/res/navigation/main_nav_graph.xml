@@ -9,12 +9,20 @@
     android:id="@+id/navigation_home"
     android:name="gads.mobile.ecom05.fragments.home.HomeFragment"
     android:label="Home"
-    tools:layout="@layout/fragment_home"/>
+    tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_search"
+            app:destination="@id/navigation_search" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_search"
         android:name="gads.mobile.ecom05.fragments.search.SearchFragment"
         android:label="Search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_cart"
         android:name="gads.mobile.ecom05.fragments.cart.CartFragment"

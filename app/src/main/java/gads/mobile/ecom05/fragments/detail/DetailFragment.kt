@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.bumptech.glide.Glide
 import com.google.android.material.snackbar.Snackbar
 import gads.mobile.ecom05.R
 import gads.mobile.ecom05.database.LocalDataBase
@@ -41,14 +42,24 @@ class DetailFragment : Fragment() {
         viewModel = ViewModelProvider(this,detailViewModelFactory)[DetailViewModel::class.java]
                               //  Use the ViewModel
 
+        val selectedWine=DetailFragmentArgs.fromBundle(requireArguments()).selectedWine
+           bindDetailView(selectedWine)
         materialButton2.setOnClickListener {
-
-           /* get a selected wine from navigation argument and add it to database
-             eg:
-           val selectedWine=  arguments?.getBundle(key:String)
-            viewModel.addSelectedWine(selectedWine)*/
-
+            viewModel.addSelectedWine(selectedWine)
             parentFragment?.view?.let { it1 -> Snackbar.make(it1,"Succeed",Snackbar.LENGTH_SHORT).show() }
+        }
+    }
+
+    private fun bindDetailView(selectedWine: Wine) {
+        with(selectedWine){
+            textView6.text=this.product_desc
+            detail_wine_origin.text=product_origin
+            detail_wine_amt.text=price
+            detail_wine_name.text=name
+            Glide.with(requireView()).load(this.product_img).into(detail_wine_img)
+            detail_wine_volume.text=product_size
+            detail_wine_alcohol_lvl.text=this.alc
+
         }
     }
 
