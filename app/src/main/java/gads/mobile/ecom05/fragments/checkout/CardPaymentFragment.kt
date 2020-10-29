@@ -51,7 +51,7 @@ class CardPaymentFragment : Fragment() {
         }
 
 
-        }
+
 
 
     }
@@ -85,7 +85,6 @@ class CardPaymentFragment : Fragment() {
             }
         })
 
-    }
+    }}
 
 
-}
