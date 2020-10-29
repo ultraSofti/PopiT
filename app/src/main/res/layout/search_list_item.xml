@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="15dp"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
@@ -24,6 +26,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
+                    android:id="@+id/item_image"
                     android:contentDescription="@string/wine_image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -45,6 +48,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Alc."
+                        android:id="@+id/item_alc"
                         android:textColor="@color/colorPrimary"
                         android:textSize="18sp" />
 
@@ -60,7 +64,8 @@
             </FrameLayout>
 
             <TextView
-                android:id="@+id/textView8"
+
+                android:id="@+id/item_description"
                 style="@style/Primary_text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,7 +78,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/item_price"
                 style="@style/sec_text_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,7 +88,7 @@
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintTop_toBottomOf="@id/item_description" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -95,7 +100,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                app:layout_constraintTop_toBottomOf="@id/item_price" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
